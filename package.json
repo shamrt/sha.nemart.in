@@ -11,11 +11,12 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "format": "prettier --loglevel warn --write \"**/*.{js,jsx,ts,tsx,json,md,css}\"",
-    "lint": "eslint . --cache --fix",
-    "pretest": "yarn lint",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "lint": "eslint --cache --ignore-path .gitignore .",
+    "test": "jest",
     "posttest": "npm run format",
+    "t:w": "yarn test --watch",
     "postinstall": "husky install"
+
   },
   "dependencies": {
     "gatsby": "^2.26.1",
@@ -25,6 +26,8 @@
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
+    "babel-jest": "^26.6.3",
+    "babel-preset-gatsby": "^0.12.1",
     "eslint": "^7.19.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^7.2.0",
@@ -34,8 +37,10 @@
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "husky": "5",
+    "jest": "^26.6.3",
     "lint-staged": ">=10",
     "prettier": "2.2.1",
+    "react-test-renderer": "^17.0.1",
     "yarnhook": ">=0.4.3"
   },
   "repository": {
