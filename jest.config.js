@@ -1,6 +1,6 @@
 module.exports = {
   transform: {
-    '^.+\\.jsx?$': '<rootDir>/.jest/jest-preprocess.js',
+    '^.+\\.[jt]sx?$': '<rootDir>/.jest/jest-preprocess.js',
   },
   moduleNameMapper: {
     '.+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
@@ -12,4 +12,5 @@ module.exports = {
     __PATH_PREFIX__: '',
   },
   setupFiles: ['<rootDir>/.jest/loadershim.js'],
+  setupFilesAfterEnv: ['<rootDir>/.jest/jest-setup.js'],
 };
