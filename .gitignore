@@ -58,8 +58,9 @@ typings/
 .cache/
 public
 
-# Mac files
+# metadata files
 .DS_Store
+Thumbs.db
 
 # Yarn
 yarn-error.log
@@ -67,3 +68,9 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+
+# IDE
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
