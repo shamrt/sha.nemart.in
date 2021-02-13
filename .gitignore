@@ -58,6 +58,9 @@ typings/
 .cache/
 public
 
+# testing
+/cypress/integration
+
 # metadata files
 .DS_Store
 Thumbs.db
