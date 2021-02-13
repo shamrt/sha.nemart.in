@@ -8,7 +8,14 @@ module.exports = {
   rules: {
     'import/no-extraneous-dependencies': [
       'error',
-      { devDependencies: ['/*.js', '**/*.test.js', '**/*.spec.js'] },
+      {
+        devDependencies: [
+          '/*.js',
+          '**/*.test.js',
+          '**/*.spec.js',
+          '/cypress/**/*.[jt]s',
+        ],
+      },
     ],
   },
 };
